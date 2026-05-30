@@ -3,19 +3,19 @@
 </div>
 
 <p align="center">
-    <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome list badge"></a>
+    <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome list badge"></a>
     <a href="https://github.com/ImYangC7/Awesome-OPC/stargazers"><img src="https://img.shields.io/github/stars/ImYangC7/Awesome-OPC?style=social" alt="GitHub stars"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
     <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
 </p>
 
-This repository manually collects papers, surveys, tools, reports, and legal context for **OPC**: AI-enabled **One-Person Company** and agentic company automation.
+This repository curates papers, benchmarks, tools, reports, and legal context for **OPC**: AI-enabled **One-Person Company** and agentic company automation.
 
-The core thesis is simple: a one-person company does not become scalable because of one model. It becomes scalable when agentic systems can reliably plan, use tools, operate software, coordinate multiple roles, preserve memory, verify outputs, and stay inside auditable permission boundaries.
+It is **not** a general LLM-agent survey list. The filter is: does this resource help one person use AI agents to perform company-level work such as research, product building, software delivery, marketing, sales, support, finance, operations, governance, or compliance?
 
 ## 📖 News
 
-**[2026/05/30]** Initial version released with agentic automation surveys, computer-use agents, research automation, security/governance, industry signals, and legal OPC context.
+**[2026/05/30]** Refocused the repository around company-function automation. Broad agent surveys were removed unless they directly cover computer use, office/GUI/OS operation, or agent security for delegated business action.
 
 ## 🌟 Overview
 
@@ -23,12 +23,18 @@ The core thesis is simple: a one-person company does not become scalable because
 - [🌟 Overview](#-overview)
 - [🤝 Contributing](#-contributing)
 - [🧭 Scope](#-scope)
-- [🔥 Methods](#-methods)
-  - [Agentic-LLM-Surveys](#agentic-llm-surveys)
-  - [Multi-Agent-Systems](#multi-agent-systems)
-  - [Computer-Use-GUI-and-OS-Agents](#computer-use-gui-and-os-agents)
-  - [Research-Automation-and-Agentic-Science](#research-automation-and-agentic-science)
-  - [Security-and-Governance](#security-and-governance)
+- [🔥 Core OPC Evidence](#-core-opc-evidence)
+  - [Company-Level-Benchmarks-and-Business-Simulations](#company-level-benchmarks-and-business-simulations)
+- [🧠 Company Functions](#-company-functions)
+  - [Research-and-Product](#research-and-product)
+  - [Software-Engineering-and-Delivery](#software-engineering-and-delivery)
+  - [Marketing-Sales-CRM-and-Support](#marketing-sales-crm-and-support)
+  - [Finance-and-Operations](#finance-and-operations)
+- [🖥 Execution Layer](#-execution-layer)
+  - [Computer-Use-Web-and-Office-Agents](#computer-use-web-and-office-agents)
+  - [Virtual-Organization-and-Multi-Agent-Workflows](#virtual-organization-and-multi-agent-workflows)
+- [🛡 Governance](#-governance)
+  - [Permissions-Secrets-and-Enterprise-Safety](#permissions-secrets-and-enterprise-safety)
 - [🏢 OPC Context](#-opc-context)
   - [Industry-Reports-and-Market-Signals](#industry-reports-and-market-signals)
   - [Legal-and-Corporate-Form](#legal-and-corporate-form)
@@ -36,90 +42,162 @@ The core thesis is simple: a one-person company does not become scalable because
 
 ## 🤝 Contributing
 
-We welcome contributions of high-signal resources through pull requests. Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+We welcome high-signal additions through pull requests. Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🧭 Scope
 
-In this list, **OPC** means AI-enabled **One-Person Company** rather than only the legal form named one person company in some jurisdictions. Relevant work usually falls into one of these layers:
+In this list, **OPC** means AI-enabled **One-Person Company**, not only the legal form called one person company in some jurisdictions.
 
-- **Agentic automation**: LLM agents, planning, tool use, memory, evaluation, and workflow-level autonomy.
-- **Multi-agent organization**: role decomposition, collaboration protocols, coordination, and virtual teams.
-- **Computer and SaaS operation**: GUI agents, browser agents, OS agents, and computer-use agents.
-- **Research and knowledge work**: AI-powered research automation, scientific discovery agents, coding, analysis, and report generation.
-- **Governance and safety**: human-in-the-loop control, least privilege, secrets, audit logs, and long-horizon reliability.
-- **Company context**: solopreneurs, nanocorps, small-business formation, legal OPC forms, tax, liability, and corporate governance.
+### In Scope
 
-## 🔥 Methods
+- **Company-level work benchmarks**: agents evaluated on realistic professional tasks, economic deliverables, business simulations, office work, CRM, finance, software engineering, or long-horizon company operations.
+- **Function-specific automation**: research/product, engineering, marketing, sales, customer support, finance, accounting, legal, operations, and reporting.
+- **Execution interfaces**: web, browser, GUI, OS, Office, SaaS, command-line, code, data tools, and tool-use environments that let agents operate real work systems.
+- **Virtual organizations**: multi-agent workflows that explicitly model roles, handoffs, SOPs, collaboration, or "AI company" structures.
+- **Governance and safety**: permissions, secrets, auditability, contextual integrity, tool misuse, indirect prompt injection, and long-horizon reliability for delegated business actions.
+- **Business/legal context**: solopreneur, nanocorp, zero-person company, single-shareholder company, one-person company, and small-business formation context.
 
-### Agentic-LLM-Surveys
+### Out of Scope
 
-| Date     | Paper Title                                                                                                                                                                       | Introduction                                                                                                          | Code |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|------|
-| 2025/03  | [Large Language Model Agent: A Survey on Methodology, Applications and Challenges](https://arxiv.org/abs/2503.21460)                                                             | Methodology-centered LLM agent taxonomy covering architecture, collaboration, evolution, tools, evaluation, and use cases. | [Github](https://github.com/luo-junyu/Awesome-Agent-Papers) |
-| 2025/03  | [Agentic Large Language Models, a survey](https://arxiv.org/abs/2503.23037)                                                                                                      | Organizes agentic LLMs around reasoning, acting, and interacting. Useful for mapping each OPC role agent.              | - |
-| 2025/04  | [From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review](https://arxiv.org/abs/2504.19678)                                                                           | Reviews reasoning, benchmarks, agent frameworks, real applications, and agent collaboration protocols.                 | - |
-| 2025/08  | [LLM-based Agentic Reasoning Frameworks: A Survey from Methods to Scenarios](https://arxiv.org/abs/2508.17692)                                                                   | Classifies single-agent, tool-based, and multi-agent reasoning frameworks across scientific discovery, software engineering, healthcare, social simulation, and economics. | - |
-| 2025/10  | [Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions](https://arxiv.org/abs/2510.25445)                                                     | Surveys agentic AI architectures and argues for hybrid neural-symbolic systems in higher-risk settings.                | - |
-| 2026/01  | [Agentic Reasoning for Large Language Models](https://arxiv.org/abs/2601.12538)                                                                                                  | Frames agentic reasoning as single-agent, self-evolving, and collective multi-agent reasoning.                         | - |
+- Generic LLM-agent surveys with no company-function mapping.
+- Generic prompt-engineering, chatbot, or RAG resources unless they support a concrete company workflow.
+- Broad reasoning, latent-space, or alignment papers unless they are used in an agentic work system.
+- Toy multi-agent role-play without real tasks, tools, verification, or company-operation relevance.
 
-### Multi-Agent-Systems
+## 🔥 Core OPC Evidence
 
-| Date     | Paper Title                                                                                                                                                                      | Introduction                                                                                                      | Code |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2024/10  | [A Survey on LLM-based Multi-Agent Systems: Workflow, Infrastructure, and Challenges](https://link.springer.com/article/10.1007/s44336-024-00009-2)                             | Reviews LLM multi-agent workflows through profile, perception, self-action, mutual interaction, and evolution.     | - |
-| 2025/01  | [Multi-Agent Collaboration Mechanisms: A Survey of LLMs](https://arxiv.org/abs/2501.06322)                                                                                      | Surveys actors, collaboration types, structures, strategies, and coordination protocols for LLM-based MAS.          | - |
-| 2025/04  | [LLMs Working in Harmony: A Survey on the Technological Aspects of Building Effective LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2504.01963)                          | Engineering-oriented survey of architecture, memory, planning, and frameworks for LLM-based multi-agent systems.   | - |
+### Company-Level-Benchmarks-and-Business-Simulations
 
-### Computer-Use-GUI-and-OS-Agents
+| Date     | Paper / Resource Title                                                                                                                                             | OPC Relevance                                                                                              | Code |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------|
+| 2024/03  | [WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?](https://arxiv.org/abs/2403.07718)                                                  | Evaluates agents on enterprise ServiceNow tasks, a close proxy for back-office work a solo company must run. | [Github](https://github.com/ServiceNow/BrowserGym) |
+| 2024/07  | [OfficeBench: Benchmarking Language Agents across Multiple Applications for Office Automation](https://arxiv.org/abs/2407.19056)                                   | Tests long-horizon office workflows that require switching across realistic applications and information sources. | - |
+| 2024/12  | [TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks](https://arxiv.org/abs/2412.14161)                                                     | Simulates digital coworkers doing professional work through web browsing, coding, programs, and coworker communication. | [Github](https://github.com/TheAgentCompany) |
+| 2025/02  | [Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents](https://arxiv.org/abs/2502.15840)                                                        | A concrete tiny-business benchmark where an agent manages inventory, pricing, ordering, and fees over a long horizon. | - |
+| 2025/09  | [APEX Benchmarks: The AI Productivity Index](https://www.mercor.com/apex/)                                                                                         | Measures whether agents can complete economically valuable knowledge-work cases in professional-service roles. | [Benchmark](https://www.mercor.com/apex/) |
+| 2025/09  | [AI Playing Business Games: Benchmarking Large Language Models on Managerial Decision-Making in Dynamic Simulations](https://arxiv.org/abs/2509.26331)              | Uses business-game simulations to test repeated managerial decisions under changing market conditions.        | - |
+| 2025/10  | [GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks](https://arxiv.org/abs/2510.04374)                                              | Measures real professional deliverables across occupations, useful for estimating which company tasks can be delegated. | [OpenAI](https://openai.com/index/gdpval/) |
+| 2025/10  | [ManagerBench: Evaluating the Safety-Pragmatism Trade-off in Autonomous LLMs](https://arxiv.org/abs/2510.00857)                                                    | Focuses on managerial decision scenarios where agents must balance business goals against safe action.        | - |
+| 2026/04  | [MarketBench: Evaluating AI Agents as Market Participants](https://arxiv.org/abs/2604.23897)                                                                        | Tests whether agents can estimate their own cost and success probability, a prerequisite for agent labor markets. | - |
+| 2026/04  | [Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition](https://arxiv.org/abs/2604.05523)                                             | Evaluates agents acting as retailers in a configurable multi-agent supply-chain economy.                      | - |
+| 2026/05  | [JobBench: Aligning Agent Work With Human Will](https://arxiv.org/abs/2605.26329)                                                                                  | Shifts occupational-agent evaluation from replacement value to workflows experts actually want to delegate.    | - |
 
-| Date     | Paper Title                                                                                                                                                                      | Introduction                                                                                                      | Code |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2024/11  | [Large Language Model-Brained GUI Agents: A Survey](https://arxiv.org/abs/2411.18279)                                                                                           | Surveys GUI agents for visual understanding, action modeling, agent frameworks, datasets, and evaluation.           | - |
-| 2025/01  | [A Comprehensive Survey of Agents for Computer Use: Foundations, Challenges, and Future Directions](https://arxiv.org/abs/2501.16150)                                            | Surveys agents that operate desktops, mobile devices, and web platforms using low-level actions such as clicks and gestures. | - |
-| 2025/08  | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482)                                                                  | Reviews multimodal OS-level agents that operate computers, phones, browsers, and general computing interfaces.      | - |
+## 🧠 Company Functions
 
-### Research-Automation-and-Agentic-Science
+### Research-and-Product
 
-| Date     | Paper Title                                                                                                                                                                      | Introduction                                                                                                      | Code |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2025/08  | [From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery](https://arxiv.org/abs/2508.14111)                                                         | Surveys autonomous scientific discovery across biology, chemistry, materials, physics, and other scientific workflows. | - |
-| 2026/05  | [AutoResearch AI: Towards AI-Powered Research Automation for Scientific Discovery](https://arxiv.org/abs/2605.23204)                                                             | Moves research automation from task-level assistance to workflow-level automation with grounding, hypothesis generation, tool use, validation, and reporting. | [Project](https://mr-tieguigui.github.io/Autoresearch/) |
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2024/08  | [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)                                 | Demonstrates an end-to-end research loop: idea generation, coding, experiments, visualization, writing, and review. | [Github](https://github.com/SakanaAI/AI-Scientist) |
+| 2024/10  | [ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://arxiv.org/abs/2410.05080)     | Grounds research-agent claims in executable data-driven scientific tasks with expert validation.                  | [Leaderboard](https://hal.cs.princeton.edu/scienceagentbench) |
+| 2025/01  | [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227)                                                  | Models a multi-agent research-assistant pipeline that can turn a human idea into report and code artifacts.       | - |
+| 2025/02  | [Towards an AI co-scientist](https://arxiv.org/abs/2502.18864)                                                                                | Frames research automation as a supervised multi-agent collaborator rather than fully unsupervised autonomy.       | - |
+| 2025/02  | [MLGym: A New Framework and Benchmark for Advancing AI Research Agents](https://arxiv.org/abs/2502.14499)                                     | Evaluates AI research agents on open-ended ML experimentation, iteration, and improvement tasks.                  | - |
+| 2025/06  | [DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents](https://arxiv.org/abs/2506.11763)                                    | Measures deep research agents on PhD-level research tasks, directly relevant to solo-founder market and technical research. | [Github](https://github.com/Ayanami0730/deep_research_bench) |
+| 2026/03  | [SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents](https://arxiv.org/abs/2603.29139)            | Tests agents that turn scientific data into analysis and visualizations, a product-research and reporting primitive. | - |
+| 2026/05  | [AutoResearch AI: Towards AI-Powered Research Automation for Scientific Discovery](https://arxiv.org/abs/2605.23204)                          | Surveys workflow-level research automation from grounding and hypothesis generation to validation and reporting.  | [Project](https://mr-tieguigui.github.io/Autoresearch/) |
+| 2026/05  | [AI Research Agents Narrow Scientific Exploration](https://arxiv.org/abs/2605.27905)                                                          | Important cautionary evidence for OPC research agents: automation can amplify search while narrowing exploration. | - |
 
-### Security-and-Governance
+### Software-Engineering-and-Delivery
 
-| Date     | Paper Title                                                                                                                                                                      | Introduction                                                                                                      | Code |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2025/06  | [A Survey on Autonomy-Induced Security Risks in Large Model-Based Agents](https://arxiv.org/abs/2506.23844)                                                                      | Surveys autonomy-induced risks such as memory poisoning, tool misuse, reward hacking, and emergent misalignment.   | - |
-| 2026/04  | [A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents](https://arxiv.org/abs/2604.23338)                                                                 | Layered attack-surface survey for agentic systems covering foundation, cognition, memory, tools, multi-agent coordination, ecosystem, and governance. | - |
-| 2026/05  | [When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI](https://arxiv.org/abs/2605.03213)                                                               | Reviews confidential computing and trusted execution environments for agents that hold sensitive context and credentials. | - |
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2023/10  | [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770)                                         | Core benchmark for delegating bug fixing and feature work to coding agents in real repositories.                  | [Github](https://github.com/SWE-bench/SWE-bench) |
+| 2024/05  | [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793)                                | Shows that agent-computer interfaces materially improve autonomous repository navigation, editing, and testing.   | [Github](https://github.com/SWE-agent/SWE-agent) |
+| 2024/07  | [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741)                               | Provides an open runtime for agents that code, use the shell, browse, and run evaluations in sandboxed environments. | [Github](https://github.com/All-Hands-AI/OpenHands) |
+| 2024/12  | [Training Software Engineering Agents and Verifiers with SWE-Gym](https://arxiv.org/abs/2412.21139)                                          | Introduces a trainable environment and verifier loop for improving real-world software engineering agents.        | [Github](https://github.com/SWE-Gym/SWE-Gym) |
+| 2025/04  | [R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents](https://arxiv.org/abs/2504.07164)                | Builds scalable executable environments for training open-weight software-engineering agents.                    | - |
+| 2025/09  | [SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?](https://arxiv.org/abs/2509.16941)                              | Raises the bar toward enterprise-grade, long-horizon software tasks that matter for real product delivery.        | [Scale](https://scale.com/blog/swe-bench-pro) |
+
+### Marketing-Sales-CRM-and-Support
+
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2024/06  | [tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045)                             | Tests agents handling retail and airline support conversations with policies, APIs, and simulated users.          | [Github](https://github.com/sierra-research/tau-bench) |
+| 2024/11  | [CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments](https://arxiv.org/abs/2411.02305) | Evaluates CRM service, analyst, and manager personas in a realistic customer-relationship workflow.               | [Github](https://github.com/SalesforceAIResearch/CRMArena) |
+| 2025/05  | [CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions](https://arxiv.org/abs/2505.18878)       | Expands CRM-agent evaluation across more realistic business scenarios, interactions, and confidentiality constraints. | - |
+| 2025/06  | [tau^2-bench: Evaluating Conversational Agents in a Dual-Control Environment](https://arxiv.org/abs/2506.07982)                              | Models service workflows where both customer and agent can act on the shared environment.                         | [Github](https://github.com/sierra-research/tau2-bench) |
+| 2025/07  | [ECom-Bench: Can LLM Agent Resolve Real-World E-commerce Customer Support Issues?](https://arxiv.org/abs/2507.05639)                         | Focuses on multimodal e-commerce customer support, a natural OPC support and operations workload.                 | [Dataset](https://huggingface.co/datasets/Alibaba-NLP/EcomBench) |
+| 2026/02  | [AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents](https://arxiv.org/abs/2602.14257)                  | Tests advertising and marketing analytics agents over real business requests and tool-call trajectories.          | [Github](https://github.com/Emanual20/adbench-leaderboard) |
+
+### Finance-and-Operations
+
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2023/11  | [FinanceBench: A New Benchmark for Financial Question Answering](https://arxiv.org/abs/2311.11944)                                           | Not an agent benchmark by itself, but a useful baseline for financial-document analysis and filing-grounded QA.   | [PDF](https://www.patronus.ai/financebench.pdf) |
+| 2024/05  | [FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models](https://arxiv.org/abs/2405.14767)         | Provides specialized financial agents for analysis, reporting, and decision support.                             | [Github](https://github.com/AI4Finance-Foundation/FinRobot) |
+| 2025/08  | [MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers](https://arxiv.org/abs/2508.20453)              | Evaluates agents across live MCP servers, including finance, travel, scientific computing, and academic search.   | - |
+| 2026/03  | [FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use](https://arxiv.org/abs/2603.08262)                                    | Provides a runnable benchmark for auditable financial tool execution by agents.                                  | - |
+| 2026/03  | [FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol](https://arxiv.org/abs/2603.24943) | Tests financial agents over real MCP tools, multi-tool chains, and multi-turn financial scenarios.               | - |
+
+## 🖥 Execution Layer
+
+### Computer-Use-Web-and-Office-Agents
+
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2023/07  | [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854)                                      | Establishes reproducible web tasks across realistic websites, a foundation for SaaS and browser automation.      | [Github](https://github.com/web-arena-x/webarena) |
+| 2024/01  | [VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks](https://arxiv.org/abs/2401.13649)                               | Adds visual grounding for web tasks where screenshots and page appearance matter.                                | - |
+| 2024/04  | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972)               | Evaluates agents on real desktop tasks across operating systems, close to how an OPC operator uses software.      | [Github](https://github.com/xlang-ai/OSWorld) |
+| 2024/11  | [Large Language Model-Brained GUI Agents: A Survey](https://arxiv.org/abs/2411.18279)                                                        | Focused survey of GUI agents, action spaces, datasets, and evaluation for operating software interfaces.          | [Github](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) |
+| 2024/12  | [The BrowserGym Ecosystem for Web Agent Research](https://arxiv.org/abs/2412.05467)                                                          | Provides a unified environment for building and evaluating web agents.                                           | [Github](https://github.com/ServiceNow/BrowserGym) |
+| 2025/01  | [AI Agents for Computer Use: A Review of Instruction-based Computer Control, GUI Automation, and Operator Assistants](https://arxiv.org/abs/2501.16150) | Reviews the instruction-to-action stack for agents controlling computers, GUIs, and browsers.                    | - |
+| 2025/08  | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482)                               | Reviews OS-level agents for computers and phones, including planning, grounding, personalization, safety, and privacy. | - |
+| 2026/05  | [Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies](https://arxiv.org/abs/2605.03596)         | Tests workspace tasks with large file dependencies, matching real solo-operator document and file workflows.      | - |
+
+### Virtual-Organization-and-Multi-Agent-Workflows
+
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2023/07  | [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)                                                    | Early "software company" pattern where specialized agents communicate through a development pipeline.            | [Github](https://github.com/OpenBMB/ChatDev) |
+| 2023/08  | [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)                                      | Encodes human SOPs into role-based multi-agent collaboration, directly relevant to virtual company design.        | [Github](https://github.com/FoundationAgents/MetaGPT) |
+| 2023/08  | [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)                                 | General framework for programmable multi-agent workflows with tools, human input, and conversational handoff.     | [Github](https://github.com/microsoft/autogen) |
+| 2023/08  | [AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)                      | Studies dynamic agent groups and emergent collaboration, useful for thinking about team-like agent organizations. | [Github](https://github.com/OpenBMB/AgentVerse) |
+
+## 🛡 Governance
+
+### Permissions-Secrets-and-Enterprise-Safety
+
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2024/03  | [InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://arxiv.org/abs/2403.02691)        | Tests a core OPC risk: agents reading untrusted content and then misusing tools.                                 | - |
+| 2024/06  | [AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352)        | Evaluates tool-using agents under realistic prompt-injection attacks involving email, banking, travel, and web tasks. | [Github](https://github.com/ethz-spylab/agentdojo) |
+| 2025/04  | [WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks](https://arxiv.org/abs/2504.18575)                                   | Focuses on prompt-injection risk in web agents, an unavoidable threat for browser-based company automation.       | - |
+| 2025/06  | [A Survey on Autonomy-Induced Security Risks in Large Model-Based Agents](https://arxiv.org/abs/2506.23844)                                  | Covers risks that appear because agents act autonomously: memory poisoning, tool misuse, reward hacking, and misalignment. | - |
+| 2026/02  | [AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks of Real-World Agent Security System](https://arxiv.org/abs/2602.03117) | Adds dynamic, open-ended prompt-injection tasks across shopping, GitHub, and daily-life scenarios.                | [Github](https://github.com/leolee99/AgentDyn) |
+| 2026/04  | [CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents](https://arxiv.org/abs/2604.21308)                                      | Tests whether enterprise agents can share useful information without leaking sensitive context.                   | - |
+| 2026/04  | [A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents: A Layered Attack Surface Framework](https://arxiv.org/abs/2604.23338) | Maps agent risks across model, cognition, memory, tool execution, multi-agent coordination, ecosystem, and governance layers. | - |
+| 2026/05  | [When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI](https://arxiv.org/abs/2605.03213)                            | Reviews confidential-computing options for agents that hold credentials, customer data, financial data, or private business memory. | - |
 
 ## 🏢 OPC Context
 
 ### Industry-Reports-and-Market-Signals
 
-| Date     | Resource Title                                                                                                                                                                    | Introduction                                                                                                      | Code |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2025     | [MIT 2025 AI Agent Index](https://aiagentindex.mit.edu/)                                                                                                                         | Product and ecosystem index for AI agents across enterprise functions and workflows.                               | - |
-| 2025     | [PwC AI Agent Survey 2025](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-agent-survey.html)                                                                        | Enterprise survey on AI agent adoption, ROI, governance, and organizational impact.                                | - |
-| 2025     | [McKinsey: The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)                                                                     | Tracks generative and agentic AI adoption, workflow integration, risk management, and scale-up barriers.           | - |
-| 2025     | [KPMG: Experiment with a zero-person company](https://kpmg.com/xx/en/our-insights/ai-and-technology/aiq/a-zero-person-company.html)                                              | Practical thought experiment on what AI agents can and cannot do when building and running a company workflow.     | - |
-| 2025     | [Gusto New Business Formation and Startup Stats](https://gusto.com/company-news/new-business-formation-startup-stats)                                                            | Small-business and solopreneur formation data useful for grounding OPC market context.                             | - |
-| 2026     | [Stripe Sessions 2026: Indexing the economy](https://stripe.com/en-cz/sessions/2026/indexing-the-economy)                                                                        | Industry context for smaller, faster business entities, embedded financial infrastructure, and nanocorp narratives. | - |
+| Date     | Resource Title                                                                                                                                 | OPC Relevance                                                                                                  | Code |
+|----------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2025     | [MIT 2025 AI Agent Index](https://aiagentindex.mit.edu/)                                                                                       | Tracks deployed agent products, capabilities, ecosystem shape, and safety features.                              | [PDF](https://aiagentindex.mit.edu/data/2025-AI-Agent-Index.pdf) |
+| 2025     | [McKinsey: The state of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)                          | Gives business-function adoption context for agentic AI and the gap between pilots and scaled workflow impact.   | - |
+| 2025     | [PwC AI Agent Survey 2025](https://www.pwc.ie/reports/ai-agent-survey.html)                                                                    | Enterprise adoption signal for agent deployments, expected ROI, governance, and implementation barriers.          | - |
+| 2025     | [KPMG and University of Amsterdam zero-person company experiment](https://kpmg.com/nl/en/about-us/press-and-media/press-releases/2025/11/ai-zero-person-company-experiment.html) | One of the clearest public experiments asking whether agents can run company functions with human supervision.    | - |
+| 2026     | [Gusto 2026 New Business Formation Report](https://gusto.com/resources/gusto-insights/new-business-formation-2026)                             | Small-business formation data on how AI is changing who starts businesses and how founders launch operations.     | - |
+| 2026     | [Stripe Sessions 2026: Indexing the economy](https://stripe.com/en-cz/sessions/2026/indexing-the-economy)                                      | Industry context for smaller, faster business entities, embedded finance, and nanocorp narratives.                | - |
 
 ### Legal-and-Corporate-Form
 
-| Date     | Paper Title                                                                                                                                                                      | Introduction                                                                                                      | Code |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------|
-| 2022     | [One Person Company and Its Role in Promotion of Entrepreneurship in India](https://ijcrt.org/papers/IJCRT22A6066.pdf)                                                           | Legal and entrepreneurship-oriented discussion of the One Person Company form under Indian company law.             | - |
-| 2024     | [Legal Study on Single-Shareholder Limited Liability Companies in Indonesia](https://journal.fh.unsri.ac.id/index.php/sriwijayalawreview/article/view/2142/0)                   | Studies single-shareholder limited liability companies and their role in company-law design.                       | - |
+| Date     | Paper / Resource Title                                                                                                                        | OPC Relevance                                                                                                  | Code |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|------|
+| 2018     | ['One Person Company' under the Companies Act, 2013: A Critical Reappraisal](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3157951)     | Legal background for the Indian OPC form and its move from minimum-two-person company formation to single-member company formation. | - |
+| 2022     | [One Person Company and Its Role in Promotion of Entrepreneurship in India](https://ijcrt.org/papers/IJCRT22A6066.pdf)                        | Connects the legal OPC structure to entrepreneurship promotion and limited-liability solo ownership.              | - |
+| 2024     | [One-Person Limited Liability Company: Considering Company's Organ Governance of the Indonesian Legal Entities for Micro and Small Enterprises](https://ejournal.undip.ac.id/index.php/dlr/article/view/44378/0) | Studies governance issues in one-person limited liability companies for micro and small enterprises.              | - |
+| 2025     | [A Study of the Concept of One Person Company in the Context of Company Law Reforms and Ease of Doing Business in India](https://ijrt.org/j/article/view/623) | Reviews OPC as a company-law reform for solo founders, MSMEs, and ease of doing business.                        | - |
 
 ## 🧩 OPC Reading Map
 
-For a compact path through this list:
+For a compact path through this repository:
 
-1. Start with **Large Language Model Agent** and **From LLM Reasoning to Autonomous AI Agents** to understand the agentic automation stack.
-2. Read **Multi-Agent Collaboration Mechanisms** and **LLMs Working in Harmony** to design the virtual company team.
-3. Add **Agents for Computer Use**, **GUI Agents**, and **OS Agents** when the agent must operate SaaS, browser, desktop, or mobile workflows.
-4. Use **AutoResearch AI** and **Agentic Science** as examples of high-value knowledge-work automation.
-5. Use the security surveys before giving agents access to real customer data, money movement, production code, email, credentials, or legal workflows.
-6. Use the industry and legal resources to connect the technical stack back to actual solopreneurs, nanocorps, and one-person legal entities.
+1. Start with **TheAgentCompany**, **GDPval**, **APEX**, **JobBench**, and **Vending-Bench** to define the OPC question as real work, not chatbot ability.
+2. Read the company-function sections next: research/product, software delivery, CRM/support, marketing, finance, and operations.
+3. Add **WebArena**, **WorkArena**, **OfficeBench**, **OSWorld**, **BrowserGym**, and the computer-use surveys when the agent must operate real software.
+4. Use **ChatDev**, **MetaGPT**, **AutoGen**, and **AgentVerse** as early patterns for role-based virtual organization, but judge them against realistic task benchmarks.
+5. Read **AgentDojo**, **InjecAgent**, **CI-Work**, **AgentDyn**, and the security surveys before giving agents real credentials, customer data, email, payments, production code, or legal workflows.
+6. Use the industry and legal resources to keep the technical stack connected to actual solopreneurs, nanocorps, zero-person company experiments, and one-person legal entities.
